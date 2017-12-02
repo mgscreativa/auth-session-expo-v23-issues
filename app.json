@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "AuthSession Expo v23 Issues",
+    "description": "Demo app to point AuthSession issues on Expo v23",
+    "slug": "authsessionexpov23issues",
+    "privacy": "public",
+    "sdkVersion": "23.0.0",
+    "icon": "./app/assets/app-icons/ios-app-icon.png",
+    "splash": {
+      "image": "./app/assets/splash/splash-screen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#f1471d"
+    }
+  }
+}
