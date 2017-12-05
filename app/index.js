@@ -58,7 +58,13 @@ class App extends Component {
     console.log('AuthSession result:', result);
 
     if (result.type !== 'success') {
-      alert('Uh oh, something went wrong');
+      console.log('Result type isn\'t success:', result.type);
+    } else if (result.type === 'success' && !result.params) {
+      console.log('Result type is success, but there aren\'t params');
+    } else if (result.type === 'success' && !result.params.access_token) {
+      console.log('Result type is success, but there isn\'t access_token');
+    } else {
+      console.log('Login seems ok. Access token:', result.params.access_token);
     }
 
     this.setState({ result });
@@ -77,7 +83,13 @@ class App extends Component {
     console.log('AuthSession result:', result);
 
     if (result.type !== 'success') {
-      alert('Uh oh, something went wrong');
+      console.log('Result type isn\'t success:', result.type);
+    } else if (result.type === 'success' && !result.params) {
+      console.log('Result type is success, but there aren\'t params');
+    } else if (result.type === 'success' && !result.params.code) {
+      console.log('Result type is success, but there isn\'t code');
+    } else {
+      console.log('Login seems ok. Code:', result.params.code);
     }
 
     this.setState({ result });
